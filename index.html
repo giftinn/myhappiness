@@ -32,7 +32,7 @@ justify-content:center;
 position:absolute;
 width:90%;
 max-width:420px;
-max-height:90vh;
+max-height:75vh;
 overflow:auto;
 background:#fff;
 border-radius:26px;
@@ -240,8 +240,8 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>I belong to You</h1>
-<p>Special present For someone i love the most.</p>
+<h1>Happy mensive, Shea</h1>
+<p>Special present For someone i love the most. But, you have to unlock it first.</p>
 <button onclick="next()">Unlock</button>
 </section>
 
@@ -282,7 +282,7 @@ Points: <span id="score">0</span> / 3
 <!-- final -->
 <section class="card">
 
-<h1>Between Us in Paris</h1>
+<h1>My Dearest</h1>
 
 <div class="lovebox">
 <div class="timer-title">TIME WITH YOU</div>
@@ -336,7 +336,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '2505';
+const correctPin = '9245';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -384,9 +384,9 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"When did our story begin?", options:["January","May","March"],correct:1},
-{q:"Who loves the most?", options:["You","100% me","Both"],correct:2},
-{q:"What’s on my mind most of the time?", options:["Game","Someone else","You"],correct:2}
+{q:"pada bulan apa pertama kali kita saling mengenal?", options:["desember","januari","februari"],correct:1},
+{q:"ada berapa banyak kata "sayang" yang telah kita ucapkan?", options:["3505","3697","4560"],correct:0},
+{q:"bagaimana cara aku buat manggil kamu?", options:["shea","meng","lainnya"],correct:1}
 ];
 
 let currentQ = 0;
@@ -451,7 +451,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2025-05-25T00:00:00");
+    const start = new Date("2026-02-09T00:00:00");
 
     setInterval(()=>{
 
@@ -485,9 +485,14 @@ function revealMemory(el){
         style="width:100%;height:100%;object-fit:cover;border-radius:18px">
     `;
 
-    const text = `
-        I love you because you actually put effort into loving me. I love you because nobody has ever given me the love that you have given me and you are the only one that could ever love me this way. I love you because you always make me feel like I am worth something. I love you because you have a nurturing nature and you take care of me, especially on days that I need love the most. I love you because you make me smile when I have almost forgotten how to. I love you because you have a huge and honest heart. I love you and every little detail about you. I love you because you are simply you.
-    `;
+    const text = ` Happy Mensive sayang
+I thank you for sticking with me this far and still accepting me for who I am. I'm so happy with you, my love. I'm at a loss for words because I've already expressed everything to you, how much I love you. You are so precious in my life.
+I'M SO HAPPY WITH YOU.
+percaya ga percaya ini adalah yang paling niat, aku bisa memberikan begitu banyak hadiah ke kamu, karena aku yakin dan percaya sama kamu, sejujurnya aku sempet ada rasa takut, takut kamu gasuka, dan sebagainya. Karena itu bentuk cinta aku ke kamu.
+aku harap kamu mau tetep gandeng aku, mau cerita ke aku, mau marah marah ke aku, mau happy bareng aku. Aku ga minta yang berlebihan, cukup kamu tetep jadi kamu dan tetep ada disini sama aku.
+
+i'm so lucky to have you, i'm always happy when i'm around you, you make me so happy, you're so perfect. you really treat me like a king, you make me feel so lucky to have met a girl like you, i really love u, mungkin kamu udh bosen baca kata kata "i'm so lucky to have you" tapi itu aku bener bener lucky bisa kenal sama kamu, bisa dapetin kamu. aku juga bingung mau gimana lagi ngungkapin nya, kaya ga cukup kalo di ungkapin pake kata kata dan aku harap kamu tetep stay disini bareng aku ya? aku tau ini cuma virtual tapi kamu berhasil buat hidup aku jadi lebih seneng, karna kamu udh banyak ngajarin aku banyak hal. hal hal yang selalu aku ingat setiap saat, cuma kamu yang selalu ada buat aku. aku gatau kalau kamu pergi aku gimana. people come and go, kita gabisa bareng terus tapi aku mau bareng terus sama kamu, egois aku kalau soal gini. maaf buat hari ini dan hari hari sebelum dan yang akan mendatang ya, aku sayang kamu, selalu dan selamanya. i love you, i love you more 🤍
+`;
 
     const paragraphs = text.trim().split(/\n\s*\n/);
 
